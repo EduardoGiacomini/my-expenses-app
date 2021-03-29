@@ -11,30 +11,33 @@
           {{ type }}
         </p>
         <p class="text-md text-gray-400">
-          {{ createdAt }}
+          {{ createdAt | dateTime }}
         </p>
       </div>
     </div>
     <div>
       <p class="text-xl font-medium">
-        - R$ {{ price }}
+        {{ price | currency }}
       </p>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-
-@Component
-export default class Card extends Vue {
-  @Prop({ required: true })
-  price!: number
-
-  @Prop({ required: true })
-  createdAt!: string
-
-  @Prop({ required: true })
-  type!: string
-}
+<script>
+export default {
+  props: {
+    type: {
+      type: String,
+      required: true,
+    },
+    createdAt: {
+      type: Date,
+      required: true,
+    },
+    price: {
+      type: Number,
+      required: true,
+    },
+  },
+};
 </script>

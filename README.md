@@ -1,10 +1,29 @@
-# My Expenses App
-Plataforma web para controle de despesas pessoais.
+# my-expenses-app
 
-### Objetivo
-Este projeto foi criado exclusivamente para fins educacionais e faz parte da minha especialização como Front-end Developer.
-Assim, temos como objetivos:
+## Project setup
+```
+npm install
+```
 
-- Exercitar o processo criativo de criação de interfaces de usuário elegantes e simples.
-- Praticar a implementação de interfaces de usuário com Vue.js e Tailwind CSS;
-- Escrever testes de unidades para componentes com Jest.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

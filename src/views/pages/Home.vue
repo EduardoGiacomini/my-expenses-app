@@ -1,17 +1,24 @@
 <template>
   <container>
-    <card type="Comidas e bebidas" created-at="15 de março de 2021, 18:00" price="5,00"/>
+    <card type="Comidas e bebidas" :createdAt="new Date()" :price="5"/>
   </container>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator';
-import Container from '@/views/pages/components/Container.vue';
-import Card from '@/views/pages/components/Card.vue';
+<script>
+import Container from '@/views/components/Container.vue';
+import Card from '@/views/components/Card.vue';
 
-@Component({
+export default {
+  name: 'home',
   components: { Container, Card },
-})
-
-export default class Home extends Vue {}
+  data() {
+    return {
+      expense: {
+        type: 'Comidas e bebidas',
+        createdAt: new Date(),
+        price: 5,
+      },
+    };
+  },
+};
 </script>
