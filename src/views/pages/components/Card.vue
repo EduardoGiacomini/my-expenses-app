@@ -11,7 +11,7 @@
           {{ type }}
         </p>
         <p class="text-md text-gray-400">
-          {{ createdAt | dateTime }}
+          {{ createdAt | datetime }}
         </p>
       </div>
     </div>
@@ -28,16 +28,16 @@ export default {
   props: {
     type: {
       type: String,
-      required: true,
+      required: true
     },
     createdAt: {
       type: Date,
-      required: true,
+      required: true
     },
     price: {
       type: Number,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>

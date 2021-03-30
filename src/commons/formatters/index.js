@@ -1,7 +1,7 @@
-import currencyFormatter from './currencyFormatter';
-import dateTimeFormatter from './dateTimeFormatter';
+import currency from './currency'
+import datetime from './datetime'
 
 export {
-  currencyFormatter,
-  dateTimeFormatter,
-};
+  currency,
+  datetime
+}

@@ -1,5 +1,5 @@
-class DateTimeFormatter {
-  constructor() {
+class Datetime {
+  constructor () {
     this.formatter = new Intl.DateTimeFormat('pt-BR', {
       weekday: 'long',
       day: '2-digit',
@@ -8,9 +8,9 @@ class DateTimeFormatter {
     })
   }
 
-  format(date) {
-    return this.formatter.format(date);
+  format (date) {
+    return this.formatter.format(date)
   }
 }
 
-export default new DateTimeFormatter();
+export default new Datetime()

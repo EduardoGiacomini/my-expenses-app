@@ -1,17 +1,31 @@
-import { shallowMount } from '@vue/test-utils';
-import Card from '@/views/components/Card.vue';
+import { shallowMount } from '@vue/test-utils'
+import '@/views/filters/index'
+
+import Card from '@/views/pages/components/Card.vue'
 
 describe('Card.vue', () => {
   it('Should renders props when passed', () => {
-    // Configuração
-    const type = 'Comidas e bebidas';
-    const createdAt = new Date();
-    const price = 5;
+    const expense = {
+      type: 'Comidas de bebidas',
+      createdAt: new Date(2021, 0, 1, 12, 0, 0),
+      price: 22.5
+    }
+    const expectedExpense = {
+      type: 'Comidas de bebidas',
+      createdAt: 'sexta-feira, 01 de janeiro de 2021',
+      price: 'R$ 22,50'
+    }
 
-    // Ação
-    const wrapper = shallowMount(Card, { propsData: { type, createdAt, price } });
+    const wrapper = shallowMount(Card, {
+      propsData: {
+        type: expense.type,
+        createdAt: expense.createdAt,
+        price: expense.price
+      }
+    })
 
-    // Resultado
-    expect(wrapper.text()).toMatch(type);
-  });
-});
+    expect(wrapper.text()).toMatch(expectedExpense.type)
+    expect(wrapper.text()).toMatch(expectedExpense.createdAt)
+    expect(wrapper.text()).toMatch(expectedExpense.price)
+  })
+})

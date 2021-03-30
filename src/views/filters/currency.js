@@ -1,5 +1,5 @@
-import { currencyFormatter } from '@/commons/formatters'
+import { currency as currencyFormatter } from '@/commons/formatters'
 
-export default function currency(value) {
+export default function currency (value) {
   return currencyFormatter.format(value)
 }

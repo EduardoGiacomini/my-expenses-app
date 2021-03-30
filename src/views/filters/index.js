@@ -1,9 +1,9 @@
-import Vue from 'vue';
+import Vue from 'vue'
 
-import currency from './currency';
-import dateTime from './dateTime';
+import currency from './currency'
+import dateTime from './datetime'
 
-Vue.filter('currency', currency);
-Vue.filter('dateTime', dateTime);
+Vue.filter('currency', currency)
+Vue.filter('datetime', dateTime)
 
-export default {};
+export default {}
