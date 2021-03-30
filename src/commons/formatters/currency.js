@@ -1,13 +1,10 @@
 class Currency {
-  constructor () {
-    this.formatter = new Intl.NumberFormat('pt', {
-      style: 'currency',
-      currency: 'BRL'
-    })
-  }
-
   format (value) {
-    return this.formatter.format(value)
+    const formattedValue = value
+      .toFixed(2)
+      .replace('.', ',')
+      .replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+    return `R$ ${formattedValue}`
   }
 }
 

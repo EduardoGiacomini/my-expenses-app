@@ -13,7 +13,7 @@ describe('Card.vue', () => {
     const expectedExpense = {
       type: 'Comidas de bebidas',
       createdAt: '01/01/2021, 12:00',
-      price: 'R$ 22,50'
+      price: 'R$ 22,50'
     }
 
     const wrapper = shallowMount(Card, {
