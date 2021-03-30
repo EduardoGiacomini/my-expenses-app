@@ -12,7 +12,7 @@ describe('Card.vue', () => {
     }
     const expectedExpense = {
       type: 'Comidas de bebidas',
-      createdAt: 'sexta-feira, 01 de janeiro de 2021',
+      createdAt: '01/01/2021, 12:00',
       price: 'R$ 22,50'
     }
 
