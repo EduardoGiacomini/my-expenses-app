@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "lint": "vue-cli-service lint",
     "start": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "test": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build",
+    "deploy": "node scripts/deploy.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -32,6 +33,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "execa": "^5.0.0",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4",
     "vue-template-compiler": "^2.6.11"
