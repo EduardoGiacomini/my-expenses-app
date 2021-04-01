@@ -1,22 +1,22 @@
 <template>
   <container>
-    <card type="Comidas e bebidas" :createdAt="new Date()" :price="5"/>
+    <avatar :user="user"/>
   </container>
 </template>
 
 <script>
 import Container from '@/views/pages/components/Container.vue'
-import Card from '@/views/pages/components/Card.vue'
+import Avatar from './components/Avatar'
 
 export default {
   name: 'home',
-  components: { Container, Card },
+  components: { Container, Avatar },
   data () {
     return {
-      expense: {
-        type: 'Comidas e bebidas',
-        createdAt: new Date(),
-        price: 5
+      user: {
+        name: 'Carlos Giacomini',
+        email: 'carlos@gmail.com',
+        photo: 'https://i.pravatar.cc/64'
       }
     }
   }
