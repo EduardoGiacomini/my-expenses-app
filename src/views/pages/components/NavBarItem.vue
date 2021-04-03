@@ -1,6 +1,6 @@
 <template>
   <li class="flex items-center w-full rounded font-medium p-3 transition-colors cursor-pointer"
-      v-bind:class="getNavBarItemColor"
+      v-bind:class="__getNavBarItemColor"
       @click="goToSelectedRoute">
     <span class="material-icons-outlined text-lg mr-2">
       {{ icon }}
@@ -20,7 +20,7 @@ export default {
   },
   props: ['route', 'icon', 'name'],
   computed: {
-    getNavBarItemColor () {
+    __getNavBarItemColor () {
       if (this.isCurrentRouteSelected()) {
         return this.activeNavBarItem
       } else {

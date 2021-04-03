@@ -13,7 +13,7 @@ describe('Avatar.vue', () => {
     }
   })
 
-  test('Deve renderizar as props name e email na tela', () => {
+  test('Deve renderizar o componente na tela', () => {
     const wrapper = shallowMount(Avatar, {
       propsData: {
         user
