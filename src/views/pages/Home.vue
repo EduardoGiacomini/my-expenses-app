@@ -1,16 +1,23 @@
 <template>
   <container>
     <avatar :user="user"/>
+    <nav-bar>
+      <nav-bar-item route="home" icon="space_dashboard" name="Painel administrativo"/>
+      <nav-bar-item route="expenses" icon="account_balance_wallet" name="Minhas despesas"/>
+      <nav-bar-item route="profile" icon="person" name="Meu perfil"/>
+    </nav-bar>
   </container>
 </template>
 
 <script>
-import Container from '@/views/pages/components/Container.vue'
+import Container from './components/Container.vue'
 import Avatar from './components/Avatar'
+import NavBar from './components/NavBar'
+import NavBarItem from './components/NavBarItem'
 
 export default {
   name: 'home',
-  components: { Container, Avatar },
+  components: { Container, Avatar, NavBar, NavBarItem },
   data () {
     return {
       user: {

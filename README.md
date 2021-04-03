@@ -13,4 +13,3 @@ Assim, temos como objetivos:
 ### Desafio
 A interface a ser contruída será a mesma do protótipo abaixo:
 ![art](https://user-images.githubusercontent.com/31314944/112920616-539b7f00-90d7-11eb-89ac-426ff662212e.png)
-
