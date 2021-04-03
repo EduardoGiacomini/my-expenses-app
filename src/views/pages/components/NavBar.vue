@@ -1,5 +1,5 @@
 <template>
-  <nav class="py-3">
+  <nav>
     <ul class="flex items-start flex-col space-y-2">
       <slot/>
     </ul>
