@@ -15,6 +15,9 @@ export default {
       components: {
         avatar: {
           alt: 'Foto do usuário'
+        },
+        logout: {
+          message: 'Sair'
         }
       }
     }
@@ -35,6 +38,9 @@ export default {
       components: {
         avatar: {
           alt: 'User photo'
+        },
+        logout: {
+          message: 'Logout'
         }
       }
     }
