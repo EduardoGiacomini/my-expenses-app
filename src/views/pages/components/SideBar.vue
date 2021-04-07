@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-60 min-h-screen max-h-screen py-3 flex flex-col space-y-4 bg-gray-100 border-solid border-r-2 border-gray-200">
+  <aside class="w-64 min-h-screen max-h-screen py-3 flex flex-col space-y-4 bg-gray-100 border-solid border-r-2 border-gray-200">
     <avatar class="px-3" :user="user"/>
 
     <horizontal-line/>

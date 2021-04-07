@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="overflow-y-auto">
     <ul class="flex items-start flex-col space-y-2">
       <slot/>
     </ul>
