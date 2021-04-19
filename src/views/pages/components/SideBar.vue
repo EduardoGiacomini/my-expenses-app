@@ -42,7 +42,7 @@ export default {
       user: {
         name: 'Carlos Giacomini',
         email: 'carlos@gmail.com',
-        photo: 'https://user-images.githubusercontent.com/31314944/113483167-11c05f00-9470-11eb-8380-cad354e102d1.jpg'
+        photo: 'https://avatars.githubusercontent.com/u/31314944?s=200'
       }
     }
   }

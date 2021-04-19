@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white flex items-center justify-between shadow-sm rounded p-4">
+  <div class="bg-white flex items-center justify-between shadow-sm rounded p-4 hover:shadow transition-shadow cursor-pointer">
     <figure class="w-12 h-12 flex items-center justify-center rounded-full mr-3"
          :class="$t(`pages.components.card.color.${this.type}`)"
          :alt="$t(`pages.components.card.alt.${this.type}`)">

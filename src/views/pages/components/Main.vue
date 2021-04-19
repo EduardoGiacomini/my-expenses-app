@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full h-screen overflow-y-auto p-6">
+  <main class="w-full h-screen overflow-x-hidden overflow-y-auto p-8">
     <slot/>
   </main>
 </template>
