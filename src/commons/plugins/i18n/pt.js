@@ -48,6 +48,24 @@ export default {
           health: 'bg-green-500'
         }
       }
+    },
+    dashboard: {
+      title: 'Painel Administrativo',
+      sections: {
+        expensesChart: {
+          title: 'Despesas',
+          subtitle: 'Março de 2020 - Abril de 2021 (Últimos 12 meses)'
+        },
+        lastExpenses: {
+          title: 'Últimos lançamentos'
+        },
+        expensesDetail: {
+          title: 'Para onde vai o meu dinheiro?'
+        }
+      },
+      actions: {
+        newExpense: 'Nova despesa'
+      }
     }
   }
 }

@@ -6,7 +6,7 @@
 
     <nav-bar class="flex-grow px-3">
       <nav-bar-item
-        route="home"
+        route="dashboard"
         icon="space_dashboard"
         :name="$t('routes.dashboard.name')"/>
       <nav-bar-item
@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import Avatar from './Avatar'
-import NavBar from './NavBar'
-import NavBarItem from './NavBarItem'
-import HorizontalLine from './HorizontalLine'
-import Logout from './Logout'
+import Avatar from '../../basic/Avatar'
+import NavBar from './components/NavBar'
+import NavBarItem from './components/NavBarItem'
+import HorizontalLine from '../../basic/HorizontalLine'
+import Logout from './components/Logout'
 
 export default {
   name: 'side-bar',

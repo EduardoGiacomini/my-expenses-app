@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import Card from '../../../src/views/pages/components/Card'
+import Card from '../../../src/views/pages/dashboard/components/ExpenseCard'
 
-describe('Card.vue', () => {
+describe('ExpenseCard.vue', () => {
   describe('On component render', () => {
     test('Should use props, i18n and formatters mocks', () => {
       const expense = {

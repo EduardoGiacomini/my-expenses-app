@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
-import NavBarItem from '../../../src/views/pages/components/NavBarItem'
+import NavBarItem from '../../../src/views/pages/components/complex/sideBar/components/NavBarItem'
 
 describe('NavBarItem.vue', () => {
   describe('On component render', () => {

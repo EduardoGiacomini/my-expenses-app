@@ -1,8 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
 import i18n from '../../../src/commons/plugins/i18n'
-import Avatar from '../../../src/views/pages/components/Avatar'
+import Avatar from '../../../src/views/pages/components/basic/Avatar'
 
-describe('Avatar.vue', () => {
+describe('ExtendedAvatar.vue', () => {
   describe('On component render', () => {
     test('Should use props', () => {
       const user = {

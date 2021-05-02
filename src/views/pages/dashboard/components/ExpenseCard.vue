@@ -25,6 +25,7 @@
 
 <script>
 export default {
+  name: 'expense-card',
   props: {
     type: {
       type: String,

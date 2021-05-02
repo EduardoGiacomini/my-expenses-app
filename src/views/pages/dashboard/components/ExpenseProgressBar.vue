@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'progress-bar',
+  name: 'expense-progress-bar',
   props: ['label', 'total', 'value'],
   computed: {
     getValueInPercentage () {
