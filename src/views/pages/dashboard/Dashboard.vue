@@ -11,6 +11,7 @@
             {{ $t('pages.dashboard.actions.newExpense') }}
           </button-primary>
         </section>
+
         <div class="space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
           <section class="space-y-4">
             <section class="space-y-4">
@@ -25,6 +26,7 @@
               <card type="education" :price="105" :created-at="new Date()"/>
             </section>
           </section>
+
           <section class="space-y-4">
             <sub-heading :title="$t('pages.dashboard.sections.expensesDetail.title')"/>
             <div class="space-y-3">
@@ -42,14 +44,14 @@
 </template>
 
 <script>
-import Container from '../components/basic/Container'
-import SideBar from '../components/complex/sideBar/SideBar'
-import MainContent from '../components/basic/MainContent'
-import Heading from '../components/basic/Heading'
-import SubHeading from '../components/basic/SubHeading'
-import ButtonPrimary from '../components/basic/ButtonPrimary'
+import Container from '../components/generic/container/Container'
+import SideBar from '../components/specific/sideBar/SideBar'
+import MainContent from '../components/generic/container/MainContent'
+import Heading from '../components/generic/typography/Heading'
+import SubHeading from '../components/generic/typography/SubHeading'
+import ButtonPrimary from '../components/generic/button/ButtonPrimary'
 import ExpenseBarChart from './components/ExpenseBarChart'
-import Card from './components/ExpenseCard'
+import Card from '../components/specific/expenseCard/ExpenseCard'
 import ProgressBar from './components/ExpenseProgressBar'
 
 export default {

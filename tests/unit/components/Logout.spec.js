@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import i18n from '../../../src/commons/plugins/i18n'
-import Logout from '../../../src/views/pages/components/complex/sideBar/components/Logout'
+import Logout from '../../../src/views/pages/components/specific/sideBar/components/Logout'
 
 describe('Logout.vue', () => {
   describe('On component button click', () => {

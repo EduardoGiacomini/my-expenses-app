@@ -1,6 +1,6 @@
 import { shallowMount } from '@vue/test-utils'
 import i18n from '../../../src/commons/plugins/i18n'
-import Avatar from '../../../src/views/pages/components/basic/Avatar'
+import Avatar from '../../../src/views/pages/components/specific/avatar/UserAvatar'
 
 describe('ExtendedAvatar.vue', () => {
   describe('On component render', () => {
