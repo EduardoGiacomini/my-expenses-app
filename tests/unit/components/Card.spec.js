@@ -1,5 +1,5 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import Card from '../../../src/views/pages/dashboard/components/ExpenseCard'
+import Card from '../../../src/views/pages/components/specific/expenseCard/ExpenseCard'
 
 describe('ExpenseCard.vue', () => {
   describe('On component render', () => {

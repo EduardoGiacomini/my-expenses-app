@@ -28,10 +28,10 @@
 </template>
 
 <script>
-import Avatar from '../../basic/Avatar'
+import Avatar from '../avatar/UserAvatar'
 import NavBar from './components/NavBar'
 import NavBarItem from './components/NavBarItem'
-import HorizontalLine from '../../basic/HorizontalLine'
+import HorizontalLine from '../../generic/line/HorizontalLine'
 import Logout from './components/Logout'
 
 export default {
