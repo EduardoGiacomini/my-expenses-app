@@ -19,7 +19,7 @@
         <section class="space-y-4">
           <sub-heading :title="$t('pages.dashboard.sections.lastTransactions.title')"/>
           <transaction-card type="food" :price="14.99" :created-at="new Date()"/>
-          <transaction-card type="transport" :price="5" :created-at="new Date()"/>
+          <transaction-card type="transportation" :price="5" :created-at="new Date()"/>
           <transaction-card type="education" :price="105" :created-at="new Date()"/>
         </section>
       </section>
@@ -27,11 +27,11 @@
       <section class="space-y-4">
         <sub-heading :title="$t('pages.dashboard.sections.transactionsDetail.title')"/>
         <div class="space-y-3">
-          <dashboard-transactions-progress-bar label="Comida e bebida" :total="10000" :value="4500"/>
-          <dashboard-transactions-progress-bar label="Educação" :total="10000" :value="2000"/>
-          <dashboard-transactions-progress-bar label="Roupas e sapatos" :total="10000" :value="1800"/>
-          <dashboard-transactions-progress-bar label="Transporte" :total="10000" :value="1000"/>
-          <dashboard-transactions-progress-bar label="Saúde" :total="10000" :value="700"/>
+          <dashboard-transactions-progress-bar type="food" :total="10000" :value="4500"/>
+          <dashboard-transactions-progress-bar type="education" :total="10000" :value="2000"/>
+          <dashboard-transactions-progress-bar type="clothes" :total="10000" :value="1800"/>
+          <dashboard-transactions-progress-bar type="transportation" :total="10000" :value="1000"/>
+          <dashboard-transactions-progress-bar type="health" :total="10000" :value="700"/>
         </div>
       </section>
     </div>

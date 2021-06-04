@@ -10,6 +10,40 @@ export default {
       name: 'Meu perfil'
     }
   },
+  domain: {
+    transaction: {
+      food: {
+        label: 'Comidas e bebidas',
+        icon: 'lunch_dining',
+        alt: 'Comidas e bebidas',
+        color: 'bg-red-500'
+      },
+      transportation: {
+        label: 'Transporte',
+        icon: 'directions_bus',
+        alt: 'Transporte',
+        color: 'bg-yellow-500'
+      },
+      education: {
+        label: 'Educação',
+        icon: 'school',
+        alt: 'Educação',
+        color: 'bg-purple-500'
+      },
+      clothes: {
+        label: 'Roupas e sapatos',
+        icon: 'local_mall',
+        alt: 'Roupas e sapatos',
+        color: 'bg-blue-500'
+      },
+      health: {
+        label: 'Saúde',
+        icon: 'health_and_safety',
+        alt: 'Saúde',
+        color: 'bg-green-500'
+      }
+    }
+  },
   pages: {
     components: {
       generic: {},
@@ -19,36 +53,6 @@ export default {
         },
         sideBar: {
           logout: 'Sair'
-        },
-        transactionCard: {
-          type: {
-            food: 'Comidas e bebidas',
-            transport: 'Transporte',
-            education: 'Educação',
-            clothes: 'Roupas e sapatos',
-            health: 'Saúde'
-          },
-          icon: {
-            food: 'lunch_dining',
-            transport: 'directions_bus',
-            education: 'school',
-            clothes: 'local_mall',
-            health: 'health_and_safety'
-          },
-          alt: {
-            food: 'Hambúrguer',
-            transport: 'Ônibus',
-            education: 'Capelo',
-            clothes: 'Sacola de compras',
-            health: 'Cruz médica'
-          },
-          color: {
-            food: 'bg-red-500',
-            transport: 'bg-yellow-500',
-            education: 'bg-purple-500',
-            clothes: 'bg-blue-500',
-            health: 'bg-green-500'
-          }
         }
       }
     },

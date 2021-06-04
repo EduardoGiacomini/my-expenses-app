@@ -1,11 +1,11 @@
 <template>
   <card>
-    <icon-avatar :icon="$t(`pages.components.specific.transactionCard.icon.${this.type}`)"
-                 :color="$t(`pages.components.specific.transactionCard.color.${this.type}`)"
-                 :alt="$t(`pages.components.specific.transactionCard.alt.${this.type}`)" />
+    <icon-avatar :icon="$t(`domain.transaction.${this.type}.icon`)"
+                 :color="$t(`domain.transaction.${this.type}.color`)"
+                 :alt="$t(`domain.transaction.${this.type}.alt`)" />
     <div class="flex-grow overflow-x-hidden">
       <body-title>
-        {{ $t(`pages.components.specific.transactionCard.type.${this.type}`) }}
+        {{ $t(`domain.transaction.${this.type}.label`) }}
       </body-title>
       <body-subtitle>
         {{ createdAt | datetime }}

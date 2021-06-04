@@ -10,6 +10,40 @@ export default {
       name: 'Profile'
     }
   },
+  domain: {
+    transaction: {
+      food: {
+        label: 'Food and drink',
+        icon: 'lunch_dining',
+        alt: 'Food and drink',
+        color: 'bg-red-500'
+      },
+      transportation: {
+        label: 'Transportation',
+        icon: 'directions_bus',
+        alt: 'Transportation',
+        color: 'bg-yellow-500'
+      },
+      education: {
+        label: 'Education',
+        icon: 'school',
+        alt: 'Education',
+        color: 'bg-purple-500'
+      },
+      clothes: {
+        label: 'Clothes and shoes',
+        icon: 'local_mall',
+        alt: 'Clothes and shoes',
+        color: 'bg-blue-500'
+      },
+      health: {
+        label: 'Health',
+        icon: 'health_and_safety',
+        alt: 'Health',
+        color: 'bg-green-500'
+      }
+    }
+  },
   pages: {
     components: {
       generic: {},
@@ -25,36 +59,6 @@ export default {
         },
         logout: {
           message: 'Logout'
-        },
-        transactionCard: {
-          type: {
-            food: 'Foods and drinks',
-            transport: 'Transportation',
-            education: 'Education',
-            clothes: 'Clothes and shoes',
-            health: 'Health'
-          },
-          icon: {
-            food: 'lunch_dining',
-            transport: 'directions_bus',
-            education: 'school',
-            clothes: 'local_mall',
-            health: 'health_and_safety'
-          },
-          alt: {
-            food: 'Hamburguer',
-            transport: 'Bus',
-            education: 'mortarboard',
-            clothes: 'Shooping bag',
-            health: 'Medical cross'
-          },
-          color: {
-            food: 'bg-red-500',
-            transport: 'bg-yellow-500',
-            education: 'bg-purple-500',
-            clothes: 'bg-blue-500',
-            health: 'bg-green-500'
-          }
         }
       }
     },

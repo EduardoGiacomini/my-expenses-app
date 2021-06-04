@@ -2,7 +2,7 @@
   <div class="relative">
     <div class="flex items-center justify-between mb-1">
       <p class="text-lg font-medium">
-        {{ label }}
+        {{ $t(`domain.transaction.${type}.label`) }}
       </p>
       <p class="text-gray-500 text-right">
         {{ getValueInPercentage }}% - {{ value | currency }}
@@ -19,7 +19,7 @@
 <script>
 export default {
   name: 'dashboard-transactions-progress-bar',
-  props: ['label', 'total', 'value'],
+  props: ['type', 'total', 'value'],
   computed: {
     getValueInPercentage () {
       return ((this.value * 100) / this.total)
