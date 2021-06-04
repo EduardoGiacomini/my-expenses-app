@@ -3,7 +3,7 @@ import { Line } from 'vue-chartjs'
 
 export default {
   extends: Line,
-  name: 'expense-bar-chart',
+  name: 'dashboard-transactions-bar-chart',
   data () {
     return {
       data: {

@@ -4,7 +4,7 @@
                 focus:outline-none focus:ring focus:border-blue-300"
           @click="logout">
     <span class="mr-2">
-      {{ $t('pages.components.logout.message') }}
+      {{ $t('pages.components.specific.sideBar.logout') }}
     </span>
     <span class="material-icons-outlined text-lg">
       logout

@@ -1,7 +1,7 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils'
-import ProgressBar from '../../../src/views/pages/dashboard/components/ExpenseProgressBar'
+import ProgressBar from '../../../src/views/pages/dashboard/components/DashboardTransactionsProgressBar'
 
-describe('ExpenseProgressBar.vue', () => {
+describe('DashboardTransactionsProgressBar.vue', () => {
   describe('On component render', () => {
     test('Should use props and calculate value in percentage', () => {
       const progress = {

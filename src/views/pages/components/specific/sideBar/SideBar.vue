@@ -10,9 +10,9 @@
         icon="space_dashboard"
         :name="$t('routes.dashboard.name')"/>
       <nav-bar-item
-        route="expenses"
+        route="transactions"
         icon="account_balance_wallet"
-        :name="$t('routes.expenses.name')"/>
+        :name="$t('routes.transactions.name')"/>
       <nav-bar-item
         route="profile"
         icon="person"
